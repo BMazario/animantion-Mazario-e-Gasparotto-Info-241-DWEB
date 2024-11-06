@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: rgb(110, 9, 9);
+    width: 100vw;
+    height: 100vh;
+}
+#logoif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px;
+}
+#papainoel{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+  
+
+
+   
