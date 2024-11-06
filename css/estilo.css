@@ -21,7 +21,14 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    animation: girarele 5s linear infinite;
 }
+@keyframes girarele {
+    from{transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+    
+}
+
   
 
 
