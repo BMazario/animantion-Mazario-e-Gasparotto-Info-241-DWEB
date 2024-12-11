@@ -5,80 +5,83 @@
   }
   
   body{
-    background: #222;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 100vh;
     overflow: hidden;
+    font-weight: bold;
+    font-size: 5em;
+    background-color: rgb(0, 0, 0);
+    color: var(--colorGrey);
+  
   }
-  
-  .presente{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  
-  .caixa{
-    width: 180px;
-    height: 120px;
-    background: crimson;
-  
-    display: flex;
-    justify-content: center;
-  
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .caixa>.fita{
-    width: 60px;
+  audio {
+    opacity: 5%;
     height: 100%;
   }
   
-  .fita{
-    background: gold;
+  :root{
+    --colorBack:rgb(0, 0, 0); 
+    --colorPurple: purple;
+    --colorGrey: grey;
   }
-  
-  .topo{
-    width: 200px;
-    height: 60px;
-    background: crimson;
-    border-radius: 10px;
-  
-    display: flex;
-    justify-content: center;
-  
-    filter: drop-shadow(0 2px 3px);
+
+  .container span{
+      animation: brilho 5s ease-in-out infinite;
   }
-  
-  .topo .fita{
-    width: 80px;
-    height: 100%;
+
+  .container span:nth-last-of-type(2){
+    animation-delay: 0.25s ;
   }
-  
-  .laco{
-    display: flex;
-    justify-content: center;
+  .container span:nth-last-of-type(3){
+    animation-delay: 0.50s ;
   }
-  
-  .volta{
-    border: 10px solid goldenrod;
-    width: 80px;
-    height: 40px;
-    border-radius: 50% / 100% 50% 50% 0;
+ 
+  .container span:nth-last-of-type(4){
+    animation-delay: 0.75s ;
   }
-  
-  .volta.esq{
-    transform: rotateY(180deg);
+ 
+  .container span:nth-last-of-type(5){
+    animation-delay: 1s ;
   }
-  .container{
-    transition: .3s ease;
+ 
+  .container span:nth-last-of-type(6){
+    animation-delay: 1.25s ;
   }
-  .caixa:hover + .container{
-    transform: rotate(-15deg) translateY(-3rem);
+ 
+  .container span:nth-last-of-type(7){
+    animation-delay: 1.50s ;
+  }
+ 
+  .container span:nth-last-of-type(8){
+    animation-delay: 1.75s ;
+  }
+ 
+  .container span:nth-last-of-type(9){
+    animation-delay: 2s ;
+  }
+ 
+  .container span:nth-last-of-type(10){
+    animation-delay: 2.25s ;
+  }
+ 
+  .container span:nth-last-of-type(11){
+    animation-delay: 2.50s ;
+  }
+ 
+  @keyframes brilho{
+    0%{
+      color: #fff;
+      text-shadow: 0 0 12px var(--colorPurple),
+       0 0 50px var(--colorPurple),
+       0 0 100px var(--colorPurple);
+
+    }
+    10%, 90%{
+      color: var(--colorGrey);
+      text-shadow: none;
+    }
+
   }
 
   #snow{
@@ -110,13 +113,15 @@
 }
 
 
-
   
   .tree {
     position: absolute;
     top: 50%;
-    left: 45%;
-    transform: translate(-50%, 0);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .tree-layerone {
     position: absolute;
@@ -228,7 +233,7 @@
     left: -9px;
     width: 13px;
     height: 13px;
-    background: #b7de26;
+    background: #9b0669;
   }
   
   .bubble.two {
@@ -236,7 +241,7 @@
     top: 85px;
     width: 13px;
     height: 13px;
-    background: #b7de26;
+    background: #2c0bbe;
   }
   
   .bubble.three {
@@ -244,21 +249,21 @@
     width: 13px;
     right: -30px;
     height: 13px;
-    background: #b8de25;
+    background: #58088d;
   }
   .bubble.four {
     top: 145px;
     left: 30px;
     width: 13px;
     height: 13px;
-    background: #b9de25;
+    background: #990101;
   }
   .bubble.five {
     top: 153px;
     left: -36px;
     width: 13px;
     height: 13px;
-    background: #b9de25;
+    background: #056b16;
   }
   .star {
     z-index: 1;
@@ -337,7 +342,7 @@
     border: 1px solid #03c300;
     transform: rotate(60deg);
   }
-  /* bulb effect */
+  
   @keyframes blinker {
     0% {
       opacity: 0.6;
@@ -347,7 +352,25 @@
     }
   }
 
-  
-
-
-   
+  .imagem{
+    animation: example 10s infinite;
+    position: absolute;
+  }
+  @keyframes example{
+    0%{
+      left: 5%; 
+      top: 40%;
+    }
+    25%{
+      left: 100px; 
+      top: 500px;
+    }
+    50%{
+      left: 1000px;
+      top: 400px;
+    }
+    100%{
+      left: 40%; 
+      top: 40%;  
+    }
+  }
