@@ -28,8 +28,11 @@
   }
 
   .if{
-    width: 30vw;
-    height: 30vh;
+    display: flex;
+    position: absolute; 
+    top: 1cm;
+    left: 32%;
+    transform: translateX(-50%); 
   }
   
   :root{
@@ -128,12 +131,13 @@
   
   .tree {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 10cm;
+    left: 25cm;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
   .tree-layerone {
     position: absolute;
