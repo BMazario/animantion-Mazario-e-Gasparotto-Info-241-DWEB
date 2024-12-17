@@ -7,38 +7,32 @@
   body{
     display: flex;
     
-    height: 100vh;
+    height: 96vh;
     overflow: hidden;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 6em;
     background-color: rgb(26, 53, 112);
     color: var(--colorGrey);
   
   }
   audio {
-    opacity: 5%;
-    height: 100%;
+    opacity: 40%;
+   
   }
   .container{
     display: flex;
     position: absolute; 
-    top: 3cm;
+    top: 1cm;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .if{
-    display: flex;
-    position: absolute; 
-    top: 1cm;
-    left: 32%;
-    transform: translateX(-50%); 
-  }
+  
   
   :root{
     --colorBack:rgb(0, 0, 0); 
-    --colorPurple: rgb(47, 168, 177);
-    --colorGrey: rgb(4, 10, 90);
+    --colorPurple: rgb(205, 241, 121);
+    --colorGrey: rgb(255, 238, 0);
   }
 
   .container span{
@@ -127,11 +121,37 @@
     }
 }
 
+#ifneve{
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#ifneve span{
+  
+  animation: animateSnow calc(75s / var(--i)) linear infinite;
 
+}
+
+@keyframes ifneve{
+  0% {
+      transform: translateY(-10vh);
+  }
+
+  100% {
+      transform: translateY(100vh);
+  }
+}
+
+.imagemcasa{
+ 
+  display: flex;
+  align-items: flex-end;
+}
   
   .tree {
     position: absolute;
-    top: 10cm;
+    top: 11.5cm;
     left: 25cm;
     transform: translate(-50%, -50%);
     display: flex;
@@ -193,7 +213,111 @@
     background: #f45b69;
     border-bottom: 1px solid #aaa;
   }
-  .tree-wrapper,
+  
+  .tree-layers {
+    position: relative;
+    height: 100%;
+  }
+  .wrapper {
+    position: absolute;
+    left: 28px;
+    background: #e4b425;
+    width: 8px;
+    height: 45px;
+  }
+  .ribbon {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    background: transparent;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #c359a2;
+    transform: rotate(-10deg);
+  }
+  .ribbon:after {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: transparent;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #c359a2;
+    transform: rotate(60deg);
+    content: '';
+  }
+  .presentsum {
+    z-index: 1;
+    position: absolute;
+    top: 265px;
+    left: 110px;
+    width: 60px;
+    height: 45px;
+    background: #f45b69;
+  }
+  .cover {
+    position: absolute;
+    left: -3px;
+    width: 66px;
+    height: 10px;
+    background: #f45b69;
+    border-bottom: 1px solid #aaa;
+  }
+  
+  .tree-layers {
+    position: relative;
+    height: 100%;
+  }
+  .wrapper {
+    position: absolute;
+    left: 28px;
+    background: #e4b425;
+    width: 8px;
+    height: 45px;
+  }
+  .ribbon {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    background: transparent;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #c359a2;
+    transform: rotate(-10deg);
+  }
+  .ribbon:after {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: transparent;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #c359a2;
+    transform: rotate(60deg);
+    content: '';
+  }
+  .presentsdois {
+    z-index: 1;
+    position: absolute;
+    top: 290px;
+    left: 35px;
+    width: 60px;
+    height: 45px;
+    background: #f45b69;
+  }
+  .cover {
+    position: absolute;
+    left: -3px;
+    width: 66px;
+    height: 10px;
+    background: #f45b69;
+    border-bottom: 1px solid #aaa;
+  }
+  
   .tree-layers {
     position: relative;
     height: 100%;
@@ -375,17 +499,43 @@
   @keyframes example{
     0%{
       left: 5%; 
-      top: 30%;
+      top: 10%;
     }
     25%{
+      top: 40%;
       left: 30% 
     }
     50%{
+      top: 10%;
       left: 50%;
+
+    }
+    75%{
+      top: 40%;
+      left: 30%;
 
     }
     100%{
       left: 5%; 
-      top: 30%;  
+      top: 10%;  
     }
   }
+#chao{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: #333;
+}
+
+.lua {
+  top: 15px;
+  left: 1000px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+
