@@ -16,7 +16,7 @@
   
   }
   audio {
-    opacity: 40%;
+    opacity: 20%;
    
   }
   .container{
@@ -151,8 +151,8 @@
   
   .tree {
     position: absolute;
-    top: 11.5cm;
-    left: 25cm;
+    top: 15cm;
+    left: 21cm;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -528,14 +528,64 @@
   background-color: #333;
 }
 
+
+
 .lua {
   top: 15px;
-  left: 1000px;
+  left: 1050px;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 80%;
   background-color: #f0f0f0;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  
+}
+
+@keyframes balanco {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.sino-container {
+  position: absolute;
+  top: 700px;
+  left: 496px;
+  width: 50px;
+  height: 50px;
+  animation: balanco 1s infinite ease-in-out;
+  transform-origin: top center;
+}
+
+.sino {
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  border-radius: 50% 50% 0 0;
   position: relative;
 }
 
+.base {
+  width: 60px;
+  height: 10px;
+  background-color: goldenrod;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  border-radius: 5px;
+}
 
+.badalo {
+  width: 10px;
+  height: 10px;
+  background-color: brown;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
