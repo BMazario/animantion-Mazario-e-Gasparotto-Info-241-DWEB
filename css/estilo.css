@@ -6,7 +6,6 @@
   
   body{
     display: flex;
-    
     height: 96vh;
     overflow: hidden;
     font-weight: bold;
@@ -17,8 +16,8 @@
   }
   audio {
     opacity: 20%;
-   
   }
+
   .container{
     display: flex;
     position: absolute; 
@@ -144,7 +143,6 @@
 }
 
 .imagemcasa{
- 
   display: flex;
   align-items: flex-end;
 }
