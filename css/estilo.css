@@ -21,11 +21,25 @@
   .container{
     display: flex;
     position: absolute; 
-    top: 1cm;
     left: 50%;
     transform: translateX(-50%);
+    animation: letra 10s infinite;
   }
-
+  
+  
+  @keyframes letra{
+    0%{
+      left: -40%; 
+      top: 10%;
+    }
+    
+    100%{
+      top: 10%;
+      left: 50% 
+     
+    }
+  } 
+    
   
   
   :root{
@@ -149,7 +163,7 @@
   
   .tree {
     position: absolute;
-    top: 12cm;
+    top: 15cm;
     left: 21cm;
     transform: translate(-50%, -50%);
     display: flex;
@@ -494,6 +508,7 @@
     animation: example 10s infinite;
     position: absolute;
   }
+
   @keyframes example{
     0%{
       left: 5%; 
@@ -530,7 +545,7 @@
 
 .lua {
   top: 15px;
-  left: 1350px;
+  left: 1050px;
   width: 200px;
   height: 200px;
   border-radius: 80%;
@@ -551,7 +566,7 @@
 
 .sino-container {
   position: absolute;
-  top: 600px;
+  top: 700px;
   left: 496px;
   width: 50px;
   height: 50px;
